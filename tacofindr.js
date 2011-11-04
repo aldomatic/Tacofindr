@@ -35,18 +35,14 @@ Ext.application({
 			}
 		});
 
+ 
 		
 		var resultsView = Ext.create('Ext.DataView',{
 			scrollable: true,
 			cls: 'mainview, results',
 			store: store,
 			//itemTpl: '<div class="place"><h2>{name}</h2> <span>Rating: <img src="{rating_img_url_small}" /><p style="margin:5px 0 10px 0;"><img src="{photo_url}" /></p><p>{address1}<br />{city}, {state} {zip}</p><p class="map"><img src="http://maps.googleapis.com/maps/api/staticmap?center={latitude},{longitude}&zoom=15&size=275x110&markers=color:orange|label:T|{latitude},{longitude}&sensor=false&mobile=true" /></p></div>',
-			itemTpl: '<div class="place"><h2>{name}</h2> <span>Rating: <img src="{rating_img_url_small}" /><p style="margin:5px 0 10px 0;"><p>{address1}<br />{city}, {state} {zip}</p><br /><a href="http://google.com" class="minimal">Map It</a><br /><br /><div id="btn"></div></div>',
-			listeners:{
-                    afterrender:function(){
-                    alert("aldo");
-                    }
-               }
+			itemTpl: '<div class="place"><h2>{name}</h2> <span>Rating: <img src="{rating_img_url_small}" /><p style="margin:5px 0 10px 0;"><p>{address1}<br />{city}, {state} {zip}</p><br /><a href="http://maps.google.com/maps?q={latitude},{longitude}" class="minimal">Map</a><br /><br /><div id="btn"></div></div>'
 		});
 		
 		
