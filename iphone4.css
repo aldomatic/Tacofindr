@@ -1,0 +1,26 @@
+#logo{
+	width:280px;
+	height:240px;
+	background:transparent url(http://www.aldomatic.com/tacofindr/app/images/app/logoapple@2x.png) top left no-repeat;
+	background-size: 280px 240px;
+}
+#badge{
+	width:92px;
+	height:25px;
+	background:transparent url(http://www.aldomatic.com/tacofindr/app/images/app/editionBadge@2x.png) top left repeat-x;
+	background-size: 92px 25px;
+	position:absolute;
+	top:0;
+	right:0
+}
+.findBtn, x-button-pressed {
+	background:transparent url(http://www.aldomatic.com/tacofindr/app/images/app/button@2x.png) top left no-repeat;
+	width:263px;
+	height:50px;
+	text-indent:-999em;
+	border:none !important;
+	position:relative;
+	left:5px;
+	background-size: 263px 50px;
+	display:block;
+}
