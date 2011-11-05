@@ -10,9 +10,7 @@ Ext.application({
 				animation:{type: 'slide', direction: 'left'}
 			}
 		});
-		
-		
-		
+			
 		var appView = Ext.create('Ext.Panel',{
 			fullscreen: true,
 			scrollable: true,
@@ -20,14 +18,13 @@ Ext.application({
 			html: '<div id="homeContentWrap"><div id="badge"></div><div id="logo"></div></div>'
 		});
 		
-		
 		var store = Ext.create('Ext.data.Store',{
 			model: "Places",
 			fields: ['name', 'rating_img_url_small', 'longitude', 'latitude', 'address1', 'city', 'state', 'zip', 'photo_url'],
 			proxy: {
 					type: 'jsonp',
 					url: 'business_review_search.json',
-					//url: 'http://api.yelp.com/business_review_search?term=taco&lat=32.802955&long=-96.769923&radius=2&limit=7&ywsid=-sS9ARVeXV9ziC576Zkrtw&category=mexican',
+					//url: 'http://api.yelp.com/business_review_search?term=taco&lat=32.802955&long=-96.769923&radius=2&limit=5&ywsid=-sS9ARVeXV9ziC576Zkrtw&category=mexican',
 					reader: {
 						type: 'json',
 						root: 'businesses'
@@ -35,14 +32,19 @@ Ext.application({
 			}
 		});
 
- 
-		
 		var resultsView = Ext.create('Ext.DataView',{
 			scrollable: true,
 			cls: 'mainview, results',
 			store: store,
-			//itemTpl: '<div class="place"><h2>{name}</h2> <span>Rating: <img src="{rating_img_url_small}" /><p style="margin:5px 0 10px 0;"><img src="{photo_url}" /></p><p>{address1}<br />{city}, {state} {zip}</p><p class="map"><img src="http://maps.googleapis.com/maps/api/staticmap?center={latitude},{longitude}&zoom=15&size=275x110&markers=color:orange|label:T|{latitude},{longitude}&sensor=false&mobile=true" /></p></div>',
-			itemTpl: '<div class="place"><h2>{name}</h2> <span>Rating: <img src="{rating_img_url_small}" /><p style="margin:5px 0 10px 0;"><p>{address1}<br />{city}, {state} {zip}</p><br /><a href="http://maps.google.com/maps?q={latitude},{longitude}" class="minimal">Map</a><br /><br /><div id="btn"></div></div>'
+			itemTpl: '<div class="place"><img src="{photo_url}" style="float:right;margin-top:8px;border:solid #ccc 1px;padding:2px;" /><h2>{name}</h2> <span>Rating: <img src="{rating_img_url_small}" /><p style="margin:5px 0 10px 0;"><p>{address1}<br />{city}, {state} {zip}</p><a href="http://maps.google.com/maps?q={latitude},{longitude}" onclick="return false;" class="minimal"><img src="mapBtn.png" class="btnImg" /></a><br /></div>',
+			 listeners: {
+                itemtap: function (list, index, item, e) {
+					if (e.getTarget('.minimal') ){
+						var url = e.getTarget('.minimal').getAttribute('href');
+						document.location.href = url;
+                     }
+                }
+            }  
 		});
 		
 		

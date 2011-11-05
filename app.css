@@ -1,0 +1,130 @@
+.mainview{
+	background: #FF3D01 url(http://www.aldomatic.com/tacofindr/app/images/app/appBgs.gif) top left repeat-x;
+}
+#homeContentWrap{
+	width:280px;
+	margin:0px auto 0 auto;
+	text-align:center;
+	padding:60px 0 0 0;
+	position:relative;
+}
+.findBtn, x-button-pressed {
+	background:transparent url(http://www.aldomatic.com/tacofindr/app/images/app/button.png) top left no-repeat !important;
+	width:263px;
+	height:50px;
+	background-size: 263px 50px;
+	border:none !important;
+	position:relative;
+	left:5px;
+}
+#logo{
+	width:280px;
+	height:240px;
+	background:transparent url(http://www.aldomatic.com/tacofindr/app/images/app/logo.png) top left no-repeat;
+	margin:0 auto -70px auto;
+	background-size: 280px 240px;
+	position:relative;
+    left:0px;
+	top:-25px
+}
+#badge{
+	width:92px;
+	height:25px;
+	background:transparent url(http://www.aldomatic.com/tacofindr/app/images/app/editionBadge.png) top left repeat-x;
+	background-size: 92px 25px;
+	position:absolute;
+	top:0;
+	right:0
+}
+.place{
+	padding:10px 15px 10px 15px;
+	font-size:14px;
+	font-weight:bold;
+	display:block;
+	background-color:#fff;
+	color:#753f10;
+	-webkit-border-radius:10px;
+	-webkit-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.3);
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%);
+	text-shadow: 0 1px 0 white;
+	/*margin-bottom:1px;*/
+	margin:10px;
+	border:solid #fff 1px;
+}
+img.btnImg{
+	position:relative;
+	left:-8px;
+	margin-top:5px;
+}
+.results{
+	padding-top:78px;
+}
+.place h2{
+	font-size:20px;
+	margin:0; padding:0;
+	text-shadow: 0 1px 0 white;
+	font-family: 'Francois One', sans-serif;
+}
+.place span{
+	font-size:12px;
+	color:#6b6b6b;
+	font-weight:normal;
+}
+.place span img{
+	position:relative;
+	top:2px;
+
+}
+.map{
+	position:relative;
+	margin:0px 0;
+}
+
+
+.map img{
+	border:solid #ccc 1px;
+}
+/*
+a.minimal {
+
+  background: #e3e3e3;
+  border: 1px solid #bbb;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 1px 1px #f6f6f6;
+  -moz-box-shadow: inset 0 0 1px 1px #f6f6f6;
+  -ms-box-shadow: inset 0 0 1px 1px #f6f6f6;
+  -o-box-shadow: inset 0 0 1px 1px #f6f6f6;
+  box-shadow: inset 0 0 1px 1px #f6f6f6;
+  color: #333;
+  font: bold 12px "helvetica neue", helvetica, arial, sans-serif;
+  line-height: 1;
+  padding: 8px 20px;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+  width: 200px; 
+  }
+  
+  a.minimal:hover {
+    background: #d9d9d9;
+    -webkit-box-shadow: inset 0 0 1px 1px #eaeaea;
+    -moz-box-shadow: inset 0 0 1px 1px #eaeaea;
+    -ms-box-shadow: inset 0 0 1px 1px #eaeaea;
+    -o-box-shadow: inset 0 0 1px 1px #eaeaea;
+    box-shadow: inset 0 0 1px 1px #eaeaea;
+    color: #222;
+    cursor: pointer; }
+  a.minimal:active {
+    background: #d0d0d0;
+    -webkit-box-shadow: inset 0 0 1px 1px #e3e3e3;
+    -moz-box-shadow: inset 0 0 1px 1px #e3e3e3;
+    -ms-box-shadow: inset 0 0 1px 1px #e3e3e3;
+    -o-box-shadow: inset 0 0 1px 1px #e3e3e3;
+    box-shadow: inset 0 0 1px 1px #e3e3e3;
+    color: #000; 
+	texd-decoratoin:none;
+	}
+*/
