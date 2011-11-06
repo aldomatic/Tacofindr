@@ -57,7 +57,18 @@ img.btnImg{
 	margin-top:5px;
 }
 .results{
-	padding-top:78px;
+	/*padding-top:78px;*/
+}
+.resultsToolBar{
+	height:78px;
+	background: #FF3D01 url(http://www.aldomatic.com/tacofindr/app/images/app/appBgs.gif) top left repeat-x;
+}
+.x-toolbar.x-docked-top {
+	border-bottom: none;
+}
+.resultsToolBar .x-innerhtml {
+	position:relative;
+	left:-30px;
 }
 .place h2{
 	font-size:20px;
@@ -128,3 +139,12 @@ a.minimal {
 	texd-decoratoin:none;
 	}
 */
+.contentStyle {
+color: white !important;
+text-shadow: 0 1px 0 #763E0F;
+font-size: 12px;
+width:250px;
+margin:0 auto 0 auto;
+padding-top:15px;
+text-align:center;
+}
