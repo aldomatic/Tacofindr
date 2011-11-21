@@ -148,3 +148,15 @@ margin:0 auto 0 auto;
 padding-top:15px;
 text-align:center;
 }
+
+
+div.x-button-back, div.x-button-back::after, div.x-button-back::before{
+	background-image:none !important;
+	border:none !important;
+	background-color:red !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(139,76,23,1)), color-stop(51%,rgba(137,93,57,1)), color-stop(51%,rgba(118,62,15,1))) !important;
+}
+div.x-button-pressed, div.x-button-pressed::after, div.x-button-pressed::before{
+	background-color: #5b2f0b !important;
+	background-image: none !important;
+}

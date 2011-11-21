@@ -46,6 +46,7 @@ Ext.application({
 					xtype: 'button',
 					text: 'Back',
 					ui: 'back',
+					cls: 'backButton',
 					handler: backBtn
 				}]
 			}],
@@ -61,6 +62,7 @@ Ext.application({
 		});
 		
 	function backBtn(){
+		store.removeAll();
 		viewport.setActiveItem(appView);
 	}
 		
@@ -86,7 +88,7 @@ Ext.application({
 		});
 		
 		viewport.add([appView, resultsView]);
-		//viewport.setActiveItem(resultsView);
+		viewport.setActiveItem(resultsView);
 	
 	}
 });
